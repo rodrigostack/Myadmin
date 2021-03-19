@@ -2,3 +2,45 @@
     width: 100%;
     height: 250px;
 }
+
+.cardmain{
+    margin-top: 5px;
+    border: 1px solid gray;
+}
+.cardtitle{
+    background-color: navy;
+    color: oldlace;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+.cardfooter{
+    background-color: cornflowerblue;
+   
+}
+
+.cardfooter:hover{
+    background-color: lightblue;
+   
+}
+
+.cardfooter a{
+    text-decoration: none;
+    color: cornsilk;
+    text-align: center;
+    text-shadow: 2px 2px 2px blue;
+}
+
+.footer{
+    background-color: lightsteelblue;
+    margin-top: 5px;
+}
+
+.footer p{
+    color: mediumblue;
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+    padding-top: 10px;
+
+}
+
