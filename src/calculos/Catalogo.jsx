@@ -5,6 +5,8 @@ import Decimoterceiro from '../imagens/13-salario.jpg'
 import Folha from '../imagens/folha.jpg'
 import Rescisao from '../imagens/rescicao.jpg'
 
+import { Link } from 'react-router-dom'
+
 
 
 export default function(){
@@ -21,7 +23,7 @@ export default function(){
                             <img src={ Ferias }  className="fly"/>
                         </div>
                         <div className="card-footer cardfooter">
-                            <a href='#'><h2 className="h4">Ferias</h2></a>
+                            <Link to='/ferias'><h2 className="h4">Ferias</h2></Link>
                         </div>
 
                     </div>

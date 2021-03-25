@@ -1,0 +1,21 @@
+.carddefault{
+    margin-top: 5px;
+}
+
+.feriasform{
+    background-color: lightsteelblue;
+    color: white;
+    font-weight: bold;
+}
+
+.cardferias{
+    background-color: mediumblue;
+   
+}
+
+.cardferias h1{
+    color: mintcream;
+    text-shadow: 2px 2px 2px lightblue;
+    text-align: center;
+    padding-top: 2px;
+}
