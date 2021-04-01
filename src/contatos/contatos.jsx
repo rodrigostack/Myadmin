@@ -10,9 +10,9 @@ export default function(){
             <div className="row">
                 <div className="col-md-4">
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item">Telefone: 4785-2587</li>
-                        <li className="list-group-item">Email: myadminservices@gmail.com</li>
-                        <li className="list-group-item">Whatsapp: 9 7475-8695</li>
+                        <li className="list-group-item text-info">Telefone: 4785-2587</li>
+                        <li className="list-group-item text-info">Email: myadminservices@gmail.com</li>
+                        <li className="list-group-item text-info">Whatsapp: 9 7475-8695</li>
                     </ul>
                 </div>
                 <div className="col-md-3 icon">

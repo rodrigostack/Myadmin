@@ -9,7 +9,7 @@
 }
 
 .cardferias{
-    background-color: mediumblue;
+    background-color: navy;
    
 }
 
@@ -18,4 +18,5 @@
     text-shadow: 2px 2px 2px lightblue;
     text-align: center;
     padding-top: 2px;
+    text-transform: uppercase;
 }

@@ -1,5 +1,6 @@
 nav{
-    background-color: cornflowerblue;
+    background-color: navy;
+    
 }
 
 img{
@@ -7,3 +8,6 @@ img{
     height: 70px;
 }
 
+.list {
+    color: oldlace;
+}

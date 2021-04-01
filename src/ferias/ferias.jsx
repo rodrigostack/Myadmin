@@ -14,14 +14,15 @@ export default function(){
         const vsb = parseFloat(sb)
         const vdias = parseInt(dias)
         const vadc = parseFloat(adc)
-        const vvp = (( vsb + vadc) /30 * vdias )
-        const vterco = (vvp / 3)
+        const vvp = parseFloat(( vsb + vadc) /30 * vdias )
+        const vterco = parseFloat(vvp / 3)
+        const vtotal = parseFloat( vvp + vterco )
         
         setVp( vvp )
 
         setTerco( vterco )
 
-        setTotal( vvp + vterco )
+        setTotal(vtotal) 
 
     }
 

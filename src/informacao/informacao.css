@@ -1,8 +1,12 @@
+.cardpr{
+    margin-top: 5px;
+}
 .cardcab{
-    background-color: midnightblue;
+    background-color: navy;
     color: mintcream;
     text-align: center;
     text-shadow: 2px 2px 2px gray;
+
     
 }
 

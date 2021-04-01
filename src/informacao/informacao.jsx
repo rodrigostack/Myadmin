@@ -4,7 +4,7 @@ import './informacao.css'
 export default function(){
     return(
         <div>
-            <div className="card">
+            <div className="card cardpr">
                 <div className="card-header cardcab">
                     <h2>Empresa MyAdmin</h2>
                 </div>
