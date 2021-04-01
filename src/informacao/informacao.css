@@ -1,0 +1,13 @@
+.cardcab{
+    background-color: midnightblue;
+    color: mintcream;
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+    
+}
+
+.cardbutton{
+    font-family: Arial, Helvetica, sans-serif;
+    color: mediumblue;
+    font-weight: bold;
+}
