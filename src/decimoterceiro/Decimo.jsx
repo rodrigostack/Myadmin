@@ -13,13 +13,13 @@ export default function(){
      const calculardec = () => {
         const vsalb = parseFloat(salb)
         const vmeses = parseInt(meses)
-        const vvalordec = ((vsalb / 12) * vmeses).toFixed(2)
-        const vprimeira = (vvalordec / 2).toFixed(2)
-        const vsegunda = ( vprimeira - ((vprimeira * 8)/100)).toFixed(2)
+        const vvalordec = ((vsalb / 12) * vmeses)
+        const vprimeira = (vvalordec / 2)
+        const vsegunda = ( vprimeira - ((vprimeira * 8)/100))
 
-        setValordec(vvalordec)
-        setPrimeira(vprimeira)
-        setSegunda(vsegunda)
+        setValordec(vvalordec.toFixed(2))
+        setPrimeira(vprimeira.toFixed(2))
+        setSegunda(vsegunda.toFixed(2))
 
      }
 
