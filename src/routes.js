@@ -7,6 +7,7 @@ import Catalogo from './calculos/Catalogo'
 import Contato from './contatos/contatos'
 import Ferias from './ferias/ferias'
 import Informacao from './informacao/informacao'
+import Decimo from './decimoterceiro/Decimo'
 
 export default function() {
     return(
@@ -17,6 +18,7 @@ export default function() {
                 <Route exact path="/contato" component={Contato} />
                 <Route exact path="/ferias" component={Ferias} />
                 <Route exact path="/informacao"component={Informacao}/>
+                <Route exact path="/decimo" component={Decimo}/>
                 
             </Switch>
      

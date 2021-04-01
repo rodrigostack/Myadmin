@@ -34,7 +34,7 @@ export default function(){
                              <img src={ Decimoterceiro } className="fly"/>
                         </div>
                         <div className="card-footer cardfooter">
-                                <a href='#'><h2 className="h4">13º Salario</h2></a>
+                                <Link to='/decimo'><h2 className="h4">13º Salario</h2></Link>
                         </div>
 
                     </div>

@@ -1,0 +1,17 @@
+.cardmain{
+    margin-top: 5px;
+    border: 1px solid gray;
+}
+
+.cardtitle h1{
+    background-color: navy;
+    color: oldlace;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+.cardformdec{
+    background-color: lightsteelblue;
+    color: white;
+    font-weight: bold;
+}
