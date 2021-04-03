@@ -26,6 +26,15 @@ export default function(){
 
     }
 
+    const limparcalcfe = () => {
+        setSb("")
+        setDias("")
+        setAdc("")
+        setVp("")
+        setTerco("")
+        setTotal("")
+    }
+
   
 
     return(
@@ -48,6 +57,7 @@ export default function(){
                         <input type="text" class="form-control" required value={adc} 
                             onChange={e => setAdc(e.target.value)}></input><br></br>
                         <button className="btn btn-outline-primary" onClick={calcularferias}>Calcular</button>
+                        <button className="btn btn-outline-secondary" onClick={limparcalcfe}>Refazer Calcular</button>
                     </div>
                     <div className="col-md-6">
                         <label className="form-label">Valor proporcional de ferias:</label><br></br>

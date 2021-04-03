@@ -23,6 +23,14 @@ export default function(){
 
      }
 
+     const limparcalc = () => {
+        setSalb("")
+        setMeses("")
+        setValordec("")
+        setPrimeira("")
+        setSegunda("")
+     }
+
 
     return(
         <div>
@@ -42,6 +50,10 @@ export default function(){
                         <input type="text" class="form-control" required value={meses} onChange={e => setMeses(e.target.value)}
                             ></input><br></br>
                         <button className="btn btn-outline-primary" onClick={calculardec} >Calcular</button>
+                        
+                        <button className="btn btn-outline-secondary" onClick={limparcalc} >Refazer Calculo</button>
+                        
+                        
                     </div>
                     <div className="col-md-6">
                         <label className="form-label">Valor proporcional de 13º salario:</label><br></br>
