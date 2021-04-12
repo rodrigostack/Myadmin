@@ -1,0 +1,15 @@
+.cardtitlecad{
+    background-color: navy;
+   
+}
+.cardtitlecad h2{
+color: mintcream;
+text-shadow: 2px 2px 2px lightblue;
+text-align: center;
+padding-top: 2px;
+text-transform: uppercase;
+}
+
+.carddefault{
+    margin-top: 5px;
+}

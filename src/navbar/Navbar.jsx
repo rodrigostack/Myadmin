@@ -22,8 +22,12 @@ export default function(){
                         <Link className="nav-link active text-white" to="/catalogo">Calculos trabalhistas</Link>
                         </li>
                         <li className="nav-item">
+                        <Link className="nav-link active text-white" to="/cadastro">Cadastre-se</Link>
+                        </li>
+                        <li className="nav-item">
                         <Link className="nav-link active text-white" to="/contato">Contatos</Link>
                         </li>
+                        
                         
                     </ul>
                     </div>

@@ -8,6 +8,7 @@ import Contato from './contatos/contatos'
 import Ferias from './ferias/ferias'
 import Informacao from './informacao/informacao'
 import Decimo from './decimoterceiro/Decimo'
+import Cadastro from './cadastro/Cadastro'
 
 export default function() {
     return(
@@ -19,7 +20,8 @@ export default function() {
                 <Route exact path="/ferias" component={Ferias} />
                 <Route exact path="/informacao"component={Informacao}/>
                 <Route exact path="/decimo" component={Decimo}/>
-                
+                <Route exact path="/cadastro" component={Cadastro}/>
+
             </Switch>
      
     )
