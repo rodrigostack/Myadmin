@@ -45,7 +45,7 @@ export default function(){
                             <img src={ Folha }  className="fly"/>
                         </div>
                         <div className="card-footer cardfooter">
-                            <a href='#'><h2 className="h4">Folha de pgto</h2></a>
+                            <Link to='/folha'><h2 className="h4">Folha de pgto</h2></Link>
                         </div>
 
                     </div>
