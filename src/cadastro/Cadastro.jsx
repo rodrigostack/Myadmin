@@ -1,7 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Cadastro.css'
+import Axios from 'axios'
 
 export default function(){
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [descricao, setDescricao] = useState();
+
+
+    const submit = () => {
+        Axios.post("http://localhost:3001/api",{
+            nome: name, email: email, descricao: descricao
+        }).then(()=>{
+            alert('Mensagem cadastrada com sucesso')
+        });
+    };
+
     return(
         <div>
             <div className="card carddefault">
@@ -9,7 +23,7 @@ export default function(){
                     <h2 className="h3">Cadastre-se em nosso sistema e entraremos em contato.</h2>
                 </div>
                 <div className="card-body">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Clique aqui para se cadastrar</button>
+                <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Clique aqui para se cadastrar</button>
 
                 <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
@@ -22,20 +36,23 @@ export default function(){
                         <form>
                         <div className="mb-3">
                             <label for="recipient-name" className="col-form-label">Nome Completo:</label>
-                            <input type="text" className="form-control" id="recipient-name" autoFocus required/>
+                            <input type="text" className="form-control" name="name" 
+                            onChange={e => setName(e.target.value)} id="recipient-name" autoFocus required/>
                         </div>
                         <div className="mb-3">
                             <label for="recipient-email" className="col-form-label">E-mail:</label>
-                            <input type="email" className="form-control" id="recipient-email" required/>
+                            <input type="email" className="form-control" name="email" 
+                            onChange={e => setEmail(e.target.value)} id="recipient-email" required/>
                         </div>
                         <div className="mb-3">
                             <label for="message-text" className="col-form-label">Mensagem:</label>
-                            <textarea className="form-control" id="message-text"></textarea>
+                            <textarea className="form-control" name="descricao" 
+                            onChange={e => setDescricao(e.target.value)} id="message-text"></textarea>
                         </div>
                         </form>
                     </div>
                     <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        <button type="button" onClick={submit} className="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
                         <button type="button" className="btn btn-primary">Enviar Mensagem</button>
                     </div>
                     </div>
