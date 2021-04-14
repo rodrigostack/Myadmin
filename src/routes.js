@@ -23,7 +23,6 @@ export default function() {
                 <Route exact path="/decimo" component={Decimo}/>
                 <Route exact path="/cadastro" component={Cadastro}/>
                 <Route exact path="/folha" component={Folha}/>
-
             </Switch>
      
     )
