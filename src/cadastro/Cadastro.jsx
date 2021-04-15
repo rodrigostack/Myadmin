@@ -3,16 +3,16 @@ import './Cadastro.css'
 import Axios from 'axios'
 
 export default function(){
-    const [name, setName] = useState();
+    const [nome, setNome] = useState();
     const [email, setEmail] = useState();
     const [descricao, setDescricao] = useState();
 
 
     const submit = () => {
         Axios.post("http://localhost:3001/api",{
-            name: name, email: email, descricao: descricao
+            nome: nome, email: email, descricao: descricao
         }).then(() => {
-            alert('Mensagem cadastrada com sucesso')
+            alert('Mensagem cadastrada com sucesso');
         });
     };
 
@@ -36,8 +36,8 @@ export default function(){
                         <form>
                         <div className="mb-3">
                             <label  className="col-form-label">Nome Completo:</label>
-                            <input type="text" className="form-control" name="name" 
-                            onChange={e => setName(e.target.value)} id="recipient-name" autoFocus required/>
+                            <input type="text" className="form-control" name="nome" 
+                            onChange={e => setNome(e.target.value)} id="recipient-name" autoFocus required/>
                         </div>
                         <div className="mb-3">
                             <label  className="col-form-label">E-mail:</label>
