@@ -3,6 +3,7 @@ import './ferias.css'
 
 
 export default function(){
+    const [name, setname] = useState()
     const [sb, setSb ] = useState()
     const [dias, setDias ] = useState()
     const [adc, setAdc ] = useState()
@@ -27,6 +28,7 @@ export default function(){
     }
 
     const limparcalcfe = () => {
+        setname("")
         setSb("")
         setDias("")
         setAdc("")
@@ -46,7 +48,7 @@ export default function(){
                 <div className="row">
                     <div className="col-md-6">
                         <label className="form-label">Nome completo do colaborador:</label><br></br>
-                        <input type="text" class="form-control" autoFocus required ></input>
+                        <input type="text" class="form-control" autoFocus required value={name}></input>
                         <label className="form-label">Informe Salario bruto do colaborador:</label><br></br>
                         <input type="text" class="form-control" required value={sb} 
                             onChange={e => setSb(e.target.value)}></input>

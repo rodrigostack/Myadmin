@@ -3,7 +3,7 @@ import './Decimo.css'
 
 
 export default function(){
-
+     const [name, setname] = useState()
      const [salb, setSalb] = useState()
      const [meses, setMeses] = useState()
      const [valordec, setValordec] = useState()
@@ -24,6 +24,7 @@ export default function(){
      }
 
      const limparcalc = () => {
+        setname("") 
         setSalb("")
         setMeses("")
         setValordec("")
@@ -42,7 +43,7 @@ export default function(){
                 <div className="row">
                     <div className="col-md-6">
                         <label className="form-label">Nome completo do colaborador:</label><br></br>
-                        <input type="text" class="form-control" autoFocus required ></input>
+                        <input type="text" class="form-control" autoFocus required value={name}></input>
                         <label className="form-label">Informe Salario bruto do colaborador:</label><br></br>
                         <input type="text" class="form-control" required value={salb} onChange={e => setSalb(e.target.value)}
                             ></input>
