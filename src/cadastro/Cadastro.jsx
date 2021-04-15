@@ -10,7 +10,7 @@ export default function(){
 
     const submit = () => {
         Axios.post("http://localhost:3001/api",{
-            nome: nome, email: email, descricao: descricao
+            nome: nome, email: email, descricao: descricao,
         }).then(() => {
             alert('Mensagem cadastrada com sucesso');
         });
